@@ -1,0 +1,5 @@
+terminal 1: 
+C:\My_Projects\Web_Dev\Project_N\SYNCO\src>http-server -a 192.168.2.121    <=== change according to ipconfig-> WiFi IPv4 Address
+
+terminal 2:
+C:\Users\takis>ngrok http 192.168.2.121:8080    <=== Same as above. Then follow the links and share final website link
