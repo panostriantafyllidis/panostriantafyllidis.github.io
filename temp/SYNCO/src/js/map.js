@@ -19,7 +19,7 @@ map.attributionControl.setPrefix("Leaflet");
 let syncomarker = L.marker([37.9562070857867, 23.756484590372605]).addTo(map);
 
 // Bind popup to the marker with a popup
-syncomarker.bindPopup("SYNCO NASSOU").openPopup();
+syncomarker.bindPopup("SYNCO Athens Experts").openPopup();
 
 // Attach key events only to the map container for better behavior
 const mapContainer = document.getElementById("map");
