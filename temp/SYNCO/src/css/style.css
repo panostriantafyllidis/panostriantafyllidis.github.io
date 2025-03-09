@@ -944,7 +944,7 @@ body {
   /* font-size: 14px; */
   line-height: 1.64286;
   font-weight: 400;
-  color: #79787f;
+  /* color: #79787f; */
   background-color: #ffffff;
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -2292,7 +2292,7 @@ hr {
   color: black;
   background-color: #fdbc00;
   border-color: #fdbc00;
-  border-radius: 17px;
+  border-radius: 5px;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 700;
@@ -4039,7 +4039,7 @@ html:not(.lt-ie10) .not-animated {
   height: 45px;
   font-size: 20px;
   line-height: 41px;
-  color: #ffffff;
+  color: #151f45;
   /* background: #0aabf5; */
   background: #fdbc00;
   overflow: hidden;
@@ -9937,7 +9937,7 @@ h1 {
     text-align: left;
     gap: 0px;
   }
-} */
+border-radius} */
 
 /*
 * ==================================================	
@@ -9952,7 +9952,7 @@ h1 {
 #slickcarousel .slick-slide {
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 70vh;
   will-change: transform;
 }
 
@@ -10070,6 +10070,32 @@ h1 {
 
 /*
 * ==================================================
+* Section: Our Services
+* ==================================================
+*/
+/* Custom CSS for the button in the #services section */
+#services .see-products-button-container {
+  text-align: right;
+  margin-top: 20px;
+}
+
+#services .btn-transition {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #151f45;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#services .btn-transition:hover {
+  background-color: #0e162d; /* Darker shade on hover */
+}
+
+/*
+* ==================================================
 * Section: Extras
 * ==================================================
 */
@@ -10105,7 +10131,7 @@ h1 {
 }
 #genericinfo .card .btn {
   background-color: #151f45;
-  border-radius: 0;
+  /* border-radius: 0; */
   color: #fff;
 }
 #genericinfo .card:hover,
@@ -10226,6 +10252,114 @@ h1 {
 
 /*
 * ==================================================
+* Section: About Us
+* ==================================================
+*/
+
+/* Styles specific to the "About Us" section */
+#aboutus {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+#aboutus .titles h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+#aboutus .intro-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+  /* color: #555; */
+}
+
+#aboutus .main-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+#aboutus .subheading {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#aboutus .features-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+#aboutus .features-list li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+  color: #444;
+}
+
+#aboutus .features-list li::before {
+  content: "✔";
+  color: #27ae60;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#aboutus .closing-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+#aboutus .call-to-action {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 30px;
+}
+
+#aboutus .call-to-action strong {
+  color: #151f45;
+}
+
+#aboutus .button-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#aboutus .button.button-secondary {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #151f45;
+  background-color: #fdbc00;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#aboutus .button.button-secondary:hover {
+  background-color: #fdbc00;
+}
+
+/*
+* ==================================================
 * transition css
 * ==================================================
 */
@@ -10254,7 +10388,8 @@ h1 {
   color: #ffffff;
   background-color: #151f45;
   border: none;
-  border-radius: 25px;
+  border-radius: 5px;
+  /* border-radius: 25px; */
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease-in-out;
