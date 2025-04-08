@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "expertise",
     "services",
     "genericinfo",
+    "aboutus",
     "partners",
     "projects",
     "contact",
