@@ -1,0 +1,15 @@
+title: panostriantafyllidis.github.io
+description: Portfolio and personal website
+baseurl: "" # Leave this empty as it's served from the root
+url: "https://panostriantafyllidis.github.io"
+theme: jekyll-theme-minimal # Change to any theme you use
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+exclude:
+  - README.md
