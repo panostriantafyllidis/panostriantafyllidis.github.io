@@ -153,9 +153,20 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1rem;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+#header p {
+  font-size: 20px; /* adjust as needed */
+  line-height: 1.6; /* optional, for readability */
+  color: rgba(255, 255, 255, 0.8); /* optional, match your header style */
+}
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
@@ -248,23 +259,38 @@ h6 {
 }
 
 /* Header Top */
-
-#header.header-top .image-container {
+#header.header-top .image-container,
+#header.header-top h1,
+#header.header-top h2,
+#header.header-top .social-links {
   display: none;
 }
 
+/* shrink header and align navbar left */
 #header.header-top {
-  height: 80px;
+  height: 60px;
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 }
 
-#header.header-top .social-links,
-#header.header-top h2 {
+/* header-top: hide all content except navbar */
+#header.header-top .container > *:not(.navbar) {
   display: none;
+}
+
+/* make navbar full width */
+#header.header-top .navbar {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start; /* align items left */
 }
 
 #header.header-top h1 {
@@ -275,10 +301,6 @@ h6 {
 #header.header-top .container {
   display: flex;
   align-items: center;
-}
-
-#header.header-top .navbar {
-  margin: 0;
 }
 
 @media (max-width: 768px) {
