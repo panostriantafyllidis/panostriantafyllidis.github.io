@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist Portfolio</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicon/Logo -->
+    <link rel="icon" type="image/png" href="assets/img/sample.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">Artist Name</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home">
+      <div>
+        <h1>Welcome to My Art World</h1>
+        <p>Comics, illustrations, and animated stories brought to life.</p>
+      </div>
+    </header>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <!-- Comics -->
+        <div class="portfolio-item">
+          <img src="" alt="Comic 1" />
+          <div class="info">
+            <h3>Comic Title 1</h3>
+            <p>A short description of the comic.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="" alt="Comic 2" />
+          <div class="info">
+            <h3>Comic Title 2</h3>
+            <p>A short description of the comic.</p>
+          </div>
+        </div>
+
+        <!-- Standalone Art -->
+        <div class="portfolio-item">
+          <img src="" alt="Art 1" />
+          <div class="info">
+            <h3>Artwork 1</h3>
+            <p>A standalone drawing or painting.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="" alt="Art 2" />
+          <div class="info">
+            <h3>Artwork 2</h3>
+            <p>A standalone drawing or painting.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Videos -->
+      <h2 style="margin-top: 4rem; text-align: center">Animated Videos</h2>
+      <div class="video-gallery">
+        <video controls>
+          <source src="" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video controls>
+          <source src="" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about">
+        <img src="" alt="Artist" />
+        <div class="bio">
+          <p>
+            Hello! I'm an artist passionate about comics, illustrations, and
+            animations. My work blends storytelling with unique visual styles. I
+            aim to create immersive worlds and characters that resonate with
+            audiences.
+          </p>
+          <p>
+            I work with digital and traditional mediums and enjoy experimenting
+            with styles and techniques to constantly evolve my art.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact">
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2026 Artist Name. All Rights Reserved.</footer>
+
+    <script>
+      // Smooth scrolling
+      document.querySelectorAll("nav a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document
+            .querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
+  </body>
+</html>
